@@ -2,6 +2,7 @@
 %define	ruby_ridir	%(ruby -r rbconfig -e 'include Config; print File.join(CONFIG["datadir"], "ri", CONFIG["ruby_version"], "system")')
 %define ruby_rubylibdir %(ruby -r rbconfig -e 'print Config::CONFIG["rubylibdir"]')
 Summary:	Ruby binding to the ecore library
+Summary(pl):	Dowi±zania jêzyka Ruby do biblioteki ecore
 Name:		ruby-ecore
 Version:	0
 Release:	1
@@ -20,14 +21,21 @@ Requires:	ruby
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Ruby binding to the Ecore library.
+Ruby binding to the ecore library.
+
+%description -l pl
+Dowi±zania jêzyka Ruby do biblioteki ecore.
 
 %package devel
-Summary: Headers for ruby-ecore library
-Group: Development/Libraries
+Summary:	Headers for ruby-ecore library
+Summary(pl):	Pliki nag³ówkowe do biblioteki ruby-ecore
+Group:		Development/Libraries
 
 %description devel
 Headers for ruby-ecore library.
+
+%description devel -l pl
+Pliki nag³ówkowe do biblioteki ruby-ecore.
 
 %prep
 %setup -q -n ruby-ecore
@@ -52,4 +60,5 @@ rm -rf $RPM_BUILD_ROOT
 %{ruby_archdir}/*.so
 
 %files devel
-%{ruby_archdir}/ecore/
+%defattr(644,root,root,755)
+%{ruby_archdir}/ecore
