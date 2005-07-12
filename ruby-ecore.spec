@@ -57,7 +57,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%{ruby_archdir}/*.so
+%attr(755,root,root) %{ruby_archdir}/*.so
 
 %files devel
 %defattr(644,root,root,755)
