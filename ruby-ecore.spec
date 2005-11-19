@@ -1,6 +1,3 @@
-%define	ruby_archdir	%(ruby -r rbconfig -e 'print Config::CONFIG["archdir"]')
-%define	ruby_ridir	%(ruby -r rbconfig -e 'include Config; print File.join(CONFIG["datadir"], "ri", CONFIG["ruby_version"], "system")')
-%define ruby_rubylibdir %(ruby -r rbconfig -e 'print Config::CONFIG["rubylibdir"]')
 Summary:	Ruby binding to the ecore library
 Summary(pl):	Dowi±zania jêzyka Ruby do biblioteki ecore
 Name:		ruby-ecore
@@ -8,15 +5,16 @@ Version:	0
 Release:	1
 License:	Ruby's
 Group:		Development/Languages
-Source0:	ruby-ecore.tar.gz
+Source0:	%{name}.tar.gz
 # Source0-md5:	2c698928f2a24e92e44fe5dedf0b4767
 URL:		http://code-monkey.de/projects/ruby-efl.html
+#BuildRequires:	setup.rb = 3.3.1
+BuildRequires:	ecore-devel
 BuildRequires:	rake
+BuildRequires:	rpmbuild(macros) >= 1.263
 BuildRequires:	ruby
 BuildRequires:	ruby-devel
 BuildRequires:	ruby-evas-devel
-BuildRequires:	ecore-devel
-#BuildRequires:	setup.rb = 3.3.1
 Requires:	ruby
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -38,7 +36,7 @@ Headers for ruby-ecore library.
 Pliki nag³ówkowe do biblioteki ruby-ecore.
 
 %prep
-%setup -q -n ruby-ecore
+%setup -q -n %{name}
 
 %build
 rake
