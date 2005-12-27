@@ -2,7 +2,7 @@ Summary:	Ruby binding to the ecore library
 Summary(pl):	Dowi±zania jêzyka Ruby do biblioteki ecore
 Name:		ruby-ecore
 Version:	0
-Release:	1
+Release:	2
 License:	Ruby's
 Group:		Development/Languages
 Source0:	%{name}.tar.gz
@@ -12,10 +12,10 @@ URL:		http://code-monkey.de/projects/ruby-efl.html
 BuildRequires:	ecore-devel
 BuildRequires:	rake
 BuildRequires:	rpmbuild(macros) >= 1.263
-BuildRequires:	ruby
+BuildRequires:	ruby-modules
 BuildRequires:	ruby-devel
 BuildRequires:	ruby-evas-devel
-Requires:	ruby
+Requires:	ruby-modules
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
