@@ -1,5 +1,5 @@
 Summary:	Ruby binding to the ecore library
-Summary(pl.UTF-8):   Dowiązania języka Ruby do biblioteki ecore
+Summary(pl.UTF-8):	Dowiązania języka Ruby do biblioteki ecore
 Name:		ruby-ecore
 Version:	0
 Release:	2
@@ -25,7 +25,7 @@ Dowiązania języka Ruby do biblioteki ecore.
 
 %package devel
 Summary:	Headers for ruby-ecore library
-Summary(pl.UTF-8):   Pliki nagłówkowe do biblioteki ruby-ecore
+Summary(pl.UTF-8):	Pliki nagłówkowe do biblioteki ruby-ecore
 Group:		Development/Libraries
 
 %description devel
