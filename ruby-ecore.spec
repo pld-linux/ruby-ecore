@@ -1,5 +1,5 @@
 Summary:	Ruby binding to the ecore library
-Summary(pl):	Dowi±zania jêzyka Ruby do biblioteki ecore
+Summary(pl.UTF-8):   DowiÄ…zania jÄ™zyka Ruby do biblioteki ecore
 Name:		ruby-ecore
 Version:	0
 Release:	2
@@ -20,19 +20,19 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Ruby binding to the ecore library.
 
-%description -l pl
-Dowi±zania jêzyka Ruby do biblioteki ecore.
+%description -l pl.UTF-8
+DowiÄ…zania jÄ™zyka Ruby do biblioteki ecore.
 
 %package devel
 Summary:	Headers for ruby-ecore library
-Summary(pl):	Pliki nag³ówkowe do biblioteki ruby-ecore
+Summary(pl.UTF-8):   Pliki nagÅ‚Ã³wkowe do biblioteki ruby-ecore
 Group:		Development/Libraries
 
 %description devel
 Headers for ruby-ecore library.
 
-%description devel -l pl
-Pliki nag³ówkowe do biblioteki ruby-ecore.
+%description devel -l pl.UTF-8
+Pliki nagÅ‚Ã³wkowe do biblioteki ruby-ecore.
 
 %prep
 %setup -q -n %{name}
