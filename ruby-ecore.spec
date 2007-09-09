@@ -7,7 +7,7 @@ License:	Ruby's
 Group:		Development/Languages
 Source0:	%{name}.tar.gz
 # Source0-md5:	2c698928f2a24e92e44fe5dedf0b4767
-URL:		http://code-monkey.de/projects/ruby-efl.html
+URL:		http://code-monkey.de/pages/ruby-efl
 #BuildRequires:	setup.rb = 3.3.1
 BuildRequires:	ecore-devel
 BuildRequires:	rake
